@@ -12,23 +12,17 @@ multilingual: true
 <div class="zh post-container">
     {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
     {{ about_zh | markdownify }}
-</div>
 
-<!-- English Version -->
-<div class="en post-container">
-    {% capture about_en %}{% include about/en.md %}{% endcapture %}
-    {{ about_en | markdownify }}
-</div>
-
-{% if site.valine_comment.enable %}
+    {% if site.valine_comment.enable %}
+    <hr style="visibility: hidden;">
                 <!-- valine 评论框 start -->
-                <div id="comment">
-                    <div id="disqus_thread" class="disqus-thread"></div>
-                </div>
                 <span id="<Your/Path/Name>" class="leancloud_visitors" data-flag-title="Your Article Title">
                     <em class="post-meta-item-text">阅读量 </em>
                     <i class="leancloud-visitors-count">1000000</i>
                 </span> 
+                <div id="comment" style="font-size: 16px;text-align: left;">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
                 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
                 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
                 <script>
@@ -45,3 +39,11 @@ multilingual: true
                 </script>
                 <!-- valine 评论框 end -->
  {% endif %}
+
+</div>
+
+<!-- English Version -->
+<div class="en post-container">
+    {% capture about_en %}{% include about/en.md %}{% endcapture %}
+    {{ about_en | markdownify }}
+</div>

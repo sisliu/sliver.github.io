@@ -57,15 +57,15 @@ layout: default
                 {% endif %}
 
                 {% if site.valine_comment.enable %}
+                 <!-- id 将作为查询条件 -->
+                 <span id="<Your/Path/Name>" class="leancloud_visitors" data-flag-title="Your Article Title">
+                    <em class="post-meta-item-text">阅读量 </em>
+                    <i class="leancloud-visitors-count">1000000</i>
+                </span> 
                 <!-- valine 评论框 start -->
                 <div class="comment">
                     <div id="disqus_thread" class="disqus-thread"></div>
-                </div>
-                <!-- id 将作为查询条件 -->
-                <span id="<Your/Path/Name>" class="leancloud_visitors" data-flag-title="Your Article Title">
-                    <em class="post-meta-item-text">阅读量 </em>
-                    <i class="leancloud-visitors-count">1000000</i>
-                </span>     
+                </div>    
                 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
                 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
                 <script>
