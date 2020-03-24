@@ -78,7 +78,7 @@ ga_domain: langtao.ltd
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "I Love The World<br>幸好头发还在"
+sidebar-about-description: "I Love The World<br>幸好 头发仍在"
 sidebar-avatar: /img/123.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -134,3 +134,13 @@ friends: [
         href: "http://ingf.github.io/"
     }
 ]
+
+#comments
+valine_comment:
+  enable: true
+# app_id
+  leancloud_appid: EIHRtUldrXYDbDunVD0lFw7b-gzGzoHsz
+# app_key
+  leancloud_appkey: rC3dXJmRlHoCE8duR7ml0mHS
+# placeholde
+  placeholder: “Just go go"
