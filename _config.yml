@@ -78,7 +78,7 @@ ga_domain: langtao.ltd
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "I Love The World<br>己所不欲 勿施于人"
+sidebar-about-description: "I Love The World<br>幸好头发还在"
 sidebar-avatar: /img/123.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
