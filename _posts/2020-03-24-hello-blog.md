@@ -39,3 +39,5 @@ ZH 的 Blog 就这么开通了。
 在此特别感谢本博客框架搭建者[Hux大神](http://huangxuan.me/)
 
 如果你恰好也喜欢这个博客，你可以[移步到](https://langtao.ltd/),需要源码请[移步](https://github.com/sisliu/sliver.github.io/tree/gh-pages)
+
+---ZH写于 2020.03.24下午
