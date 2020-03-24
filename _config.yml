@@ -144,3 +144,7 @@ valine_comment:
   leancloud_appkey: rC3dXJmRlHoCE8duR7ml0mHS
 # placeholde
   placeholder: "我见过凌晨四点的广州，也曾在七点拥抱她入眠"
+ # verify
+  verify: true #验证码，verify和notify这两个最好就别动了 
+ # notify
+  notify: true #评论回复提醒
