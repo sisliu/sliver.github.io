@@ -15,7 +15,7 @@ future: true
 RSS: false
 weibo_username:     zh
 zhihu_username:     zh
-github_username:    zh
+github_username:    sisliu
 twitter_username:   zh
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
@@ -72,7 +72,7 @@ netease_comment: false
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_domain: langtao.ltd
 
 
 
