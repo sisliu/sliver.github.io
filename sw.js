@@ -123,7 +123,6 @@ self.addEventListener('activate', event => {
       .filter(cacheName => DEPRECATED_CACHES.includes(cacheName))
       .map(cacheName => caches.delete(cacheName))
   ))
-  console.log('service worker activated.')
   event.waitUntil(self.clients.claim());
 });
 
@@ -211,7 +210,6 @@ self.addEventListener('fetch', event => {
     if (isNavigationReq(event.request)) {
       // you need "preserve logs" to see this log
       // cuz it happened before navigating
-      console.log(`fetch ${event.request.url}`)
       event.waitUntil(revalidateContent(cached, fetchedCopy))
     }
   }

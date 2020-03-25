@@ -3,25 +3,27 @@ layout: page
 description: "我追逐风 却发现风一直在我身边"
 ---
 
-{% for post in paginator.posts %}
+<!--目的是形成文章预览--> 
+{% for post in paginator.posts %} <!--循环输出分页文章，分页数量在_config.yml进行配置，只对index.html有效-->
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
-            {{ post.title }}
+            {{ post.title }}  <!--获取文章题目 -->
         </h2>
         {% if post.subtitle %}
         <h3 class="post-subtitle">
-            {{ post.subtitle }}
+            {{ post.subtitle }}  <!--获取文章详细解释 -->
         </h3>
         {% endif %}
-        <div class="post-content-preview">
+        <div class="post-content-preview"> <!--获取文章摘要，分中英文，英文输出前300，中文前200 -->
             {% if post.lang == 'en' %}
                 {{ post.content | strip_html | truncate:300 }}
             {% else %}
-                {{ post.content | strip_html | truncate:200 }}
+                {{ post.content | strip_html | truncate:200 }} 
             {% endif %}
         </div>
     </a>
+    <!--输出文章作者和时间-->
     <p class="post-meta">
         Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
     </p>
@@ -30,15 +32,16 @@ description: "我追逐风 却发现风一直在我身边"
 {% endfor %}
 
 <!-- Pager -->
-{% if paginator.total_pages > 1 %}
+{% if paginator.total_pages > 1 %} <!--判断文章总数是否大于1--> 
 <ul class="pager">
-    {% if paginator.previous_page %}
+    {% if paginator.previous_page %} <!--是否有上一页-->
     <li class="previous">
         <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
     </li>
     {% endif %}
     {% if paginator.next_page %}
     <li class="next">
+        //下一页url(paginator.next_page_path)
         <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
     </li>
     {% endif %}
