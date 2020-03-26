@@ -41,7 +41,7 @@ description: "我追逐风 却发现风一直在我身边"
     {% endif %}
     {% if paginator.next_page %}
     <li class="next">
-        //下一页url(paginator.next_page_path)
+        <!--//下一页url(paginator.next_page_path)-->
         <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
     </li>
     {% endif %}
