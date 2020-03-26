@@ -90,12 +90,15 @@ console.log(func.__proto__)
 2.什么是原型链
 
 看个例子
+
+```
 function func(){}
 let newObj = new func() //构造调用func，返回一个新对象
 const newObj__proto__ = Object.getPrototypeOf(newObj) //获取newObj原型对象
 console.log(newObj__proto__ === func.prototype) //true验证newObj的原型指向func
 const func__proto = Object.getPrototypeOf( func.prototype) // 获取func.prototype的原型
 console.log(func__proto === Objecet.prototype)
+```
 
 如是以前的语法，从newObj查找func的原型，是这样的：
 
