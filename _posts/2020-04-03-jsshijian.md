@@ -7,7 +7,7 @@ author:     "ZH"
 header-img: "img/post-sample-image.jpg"
 catalog: true
 tags:
-    - js
+    - JS
 ---
 ### 前言
 这段时间忙着搭建自己的项目，博客就没时间去写了，那个项目搭建真的是一言难尽啊，
